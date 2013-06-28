@@ -1,0 +1,30 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;}
+#l-map{height:100%;width:78%;float:left;border-right:2px solid #bcbcbc;}
+#r-result{height:100%;width:20%;float:left;}
+</style>
+<title>find the nearest KFC</title>
+</head>
+<body>
+
+<h3>请输入地球上的坐标</h3>
+精度:<input id="lng" value="120.632739" />
+维度:<input id="lat" value="31.31841" />
+<button class="findout" disabled>where is the nearest KFC</button>
+
+<div id="output"></div>
+
+<hr />
+
+<div id="allmap"></div>
+
+
+<script src="jquery-1.9.0.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=E1ac9c0489107845147d0e24ee52dc6f"></script>
+<script src="controller.js"></script>
+</body>
+</html>
+
